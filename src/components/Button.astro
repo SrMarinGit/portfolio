@@ -1,0 +1,28 @@
+---
+import buttons from "../assets/buttons";
+
+interface Props {
+  id: string;
+}
+
+const { id } = Astro.props;
+
+const [idSplited, link] = id?.split(" ");
+const upperId = idSplited.toUpperCase();
+
+if (!buttons[upperId])
+  throw new Error(
+    `Button.astro: El id especificado en no existe. Id: ${upperId}`
+  );
+
+const { name, color, Icon } = buttons[upperId];
+---
+
+<a
+  href={link}
+  class={`inline-flex gap-2 rounded-lg p-1 px-3 mt-3 hover:scale-105 transition ${color}`}
+  target="_blank"
+>
+  <Icon class="w-4" />
+  {name}
+</a>

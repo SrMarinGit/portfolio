@@ -1,0 +1,28 @@
+---
+interface Props {}
+
+//const { img, title, description } = Astro.props;
+---
+
+<header
+  class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto"
+>
+  <nav class="flex gap-4 text-zinc-50 mt-6">
+    <a href="../#proyectos">Proyectos</a>
+    <a href="../#experiencia">Experiencia</a>
+    <a href="../#sobre-mi">Sobre mí</a>
+    <a href="mailto:srmarincontacto@gmail.com">Contacto</a>
+  </nav>
+</header>
+
+<style>
+  nav {
+    background: #030617;
+    background: radial-gradient(at center, #030617, #021334e6);
+    padding: 5px 20px 5px 20px;
+    border-radius: 50px;
+  }
+  a:hover {
+    text-shadow: #99f6e3f8 1px 0 10px;
+  }
+</style>

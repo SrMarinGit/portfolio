@@ -1,0 +1,46 @@
+---
+import Button from "./Button.astro";
+
+interface Props {
+  img: string;
+  title: string;
+  description: string;
+}
+
+const { img, title, description } = Astro.props;
+---
+
+<div class="text-neutral-100 mt-28 max-w-xl text-pretty">
+  <div class="flex gap-5">
+    <img src={img} class="rounded-full w-20" />
+
+    <a
+      href="https://www.linkedin.com/in/rafael-marin-toledano-340ab1252/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <div class="flex items-center">
+        <span class="relative inline-flex overflow-hidden rounded-full p-[1px]">
+          <span
+            class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"
+          ></span>
+          <div
+            class="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-green-800 bg-green-100 rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl"
+          >
+            Disponible para trabajar
+          </div>
+        </span>
+      </div>
+    </a>
+  </div>
+
+  <h1 class="mb-5 font-bold text-[50px]">{title}</h1>
+  <p class="mb-0.5 text-xl" set:html={description} />
+  <div class="flex gap-5 mt-4">
+    <Button id="CONTACTAME mailto:srmarincontacto@gmail.com" />
+    <Button
+      id="LINKEDIN https://www.linkedin.com/in/rafael-marin-toledano-340ab1252/"
+    />
+  </div>
+</div>

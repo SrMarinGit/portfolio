@@ -1,0 +1,21 @@
+---
+import tags from "../assets/tags";
+
+interface Props {
+  id: string;
+}
+
+const { id } = Astro.props;
+
+const upperId = id.toUpperCase();
+
+if (!tags[upperId]) throw new Error("Debes pasar un tag válido.");
+const { name, color, Icon } = tags[upperId];
+---
+
+<span
+  class={`inline-flex gap-2 items-center rounded-xl ${color} px-3 text-[12px] min-h-6`}
+>
+  <Icon class="w-4" />
+  {name}
+</span>

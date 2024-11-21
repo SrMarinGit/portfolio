@@ -1,0 +1,46 @@
+---
+import Trabajo from "../components/Trabajo.astro";
+import IconItchio from "../icons/Botones/IconItchio.astro";
+import IconExperiencia from "../icons/Tags/IconExperiencia.astro";
+---
+
+<section id="experiencia" class="text-neutral-100 mt-28 rounded-xl">
+  <h2 class="flex gap-4 items-center font-bold">
+    <IconExperiencia />
+    Experiencia laboral
+  </h2>
+
+  <div class="grid grid-cols-2 gap-4">
+    <Trabajo
+      list={[
+        "2 juegos publicados (Switch, Steam, PlayStore).",
+        "Unity, Unreal 5, C#, C++, Verse.",
+      ]}
+      position="Desarrollo de Videojuegos"
+      location="MegaDrill"
+      time="Enero 2021 - Actualmente"
+    />
+    <Trabajo
+      list={[
+        "Proyectos en Node.js, React, Angular, Astro.",
+        "SEO, SEM, WPO.",
+        "Gestión de equipo y proyectos para pequeñas empresas.",
+      ]}
+      position="Programación Web"
+      location="Deseo Marketing Digital"
+      time="Marzo 2021 - Enero 2024"
+    />
+    <Trabajo
+      list={["+150.000 suscriptores en YouTube.", "+10.000.000 de visitas."]}
+      position="Creador de Contenido"
+      location="YouTube & Twitch"
+      time="Marzo  2020 - Diciembre 2021"
+    />
+    <Trabajo
+      list={[" Creación de vídeos para eventos y YouTubers profesionales."]}
+      position="Edición de Vídeo"
+      location="Freelance"
+      time="Marzo 2014 - Diciembre 2021"
+    />
+  </div>
+</section>

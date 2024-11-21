@@ -1,0 +1,40 @@
+---
+import Image from "astro/components/Image.astro";
+import placa from "../assets/placa.jpeg";
+import IconSobreMi from "../icons/Tags/IconSobreMi.astro";
+---
+
+<section id="sobre-mi" class="text-neutral-100 mt-28">
+  <h2 class="flex gap-4 items-center font-bold">
+    <IconSobreMi />Sobre mí
+  </h2>
+
+  <article class="flex gap-2">
+    <div id="sobre-mi-txt" class="[&>p]:mb-4 max-w-[550px]">
+      <p>
+        Me llamo Rafael Marin, pero en redes se me conoce como SrMarin. <strong
+          >Llevo más de 20 años usando ordenadores</strong
+        > e interesandome por la programación y el desarrollo de software.
+      </p>
+      <p>
+        Mi interés por el desarrollo <strong
+          >me llevó a crear 2 videojuegos</strong
+        > por mi cuenta. Siendo uno de ellos un éxito que <strong
+          >se está ampliando a todas las consolas de última generación.</strong
+        >
+      </p>
+      <p>
+        Otro de mis mayores éxitos ha sido mi canal de YouTube sobre
+        videojuegos, donde <strong
+          >he conseguido +150.000 suscriptores en menos de 1 año</strong
+        > gracias a mi conocimiento sobre marketing y comunicación.
+      </p>
+    </div>
+
+    <Image
+      src={placa}
+      alt="Encima de buen programador, guapo"
+      class="ml-16 w-64 h-64 shadow-[5px_5px_0px_0px_rgba(255,255,255)] rotate-6"
+    />
+  </article>
+</section>
