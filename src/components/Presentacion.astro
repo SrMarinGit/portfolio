@@ -1,18 +1,23 @@
 ---
+import { Image } from "astro:assets";
 import Button from "./Button.astro";
+import img from "../assets/img_perfil.jpg";
 
 interface Props {
-  img: string;
   title: string;
   description: string;
 }
 
-const { img, title, description } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <div class="text-neutral-100 mt-28 max-w-xl text-pretty">
   <div class="flex gap-5">
-    <img src={img} class="rounded-full w-20" />
+    <Image
+      src={img}
+      alt="Encima de buen programador, guapo"
+      class="rounded-full w-20"
+    />
 
     <a
       href="https://www.linkedin.com/in/rafael-marin-toledano-340ab1252/"
