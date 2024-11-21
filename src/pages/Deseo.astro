@@ -7,17 +7,20 @@ import Experiencia from "../components/Experiencia.astro";
 import SobreMi from "../components/SobreMi.astro";
 import Footer from "../components/Footer.astro";
 import Proyecto from "../components/Proyecto.astro";
+import img from "../assets/deseo_web.webp";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Deseo">
   <Nav />
   <main class="max-w-screen-lg m-auto mt-36">
     <Proyecto id="deseo_detallado" />
-    <img
+
+    <Image
       class="m-auto rounded-lg w-[600px] hover:scale-125 transition"
-      src="/src/assets/deseo_web.webp"
-      alt=""
+      src={img}
+      alt="Deseo Marketing Digital - Inicio"
     />
+    <Footer />
   </main>
-  <Footer />
 </Layout>
