@@ -33,7 +33,7 @@ const buttons: Record<string, { name: string; color: string; Icon: any; }> = {
   },
   TRAILER: {
     name: "Trailer",
-    color: "bg-black text-white",
+    color: "bg-gray-800 text-white",
     Icon: IconTrailer,
   },
   ITCHIO: {
