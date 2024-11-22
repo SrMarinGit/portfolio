@@ -17,17 +17,17 @@ const buttons: Record<string, { name: string; color: string; Icon: any; }> = {
 
   },
   SWITCH: {
-    name: "Switch",
+    name: "",
     color: "bg-[#fe0016] text-[#FBFEFB]",
     Icon: IconSwitch,
   },
   STEAM: {
-    name: "Steam",
+    name: "",
     color: "bg-[#0A1A31] text-white",
     Icon: IconSteam,
   },
   ANDROID: {
-    name: "Android",
+    name: "",
     color: "bg-[#39AF66] text-white",
     Icon: IconAndroid,
   },
@@ -37,7 +37,7 @@ const buttons: Record<string, { name: string; color: string; Icon: any; }> = {
     Icon: IconTrailer,
   },
   ITCHIO: {
-    name: "Itch.io",
+    name: "",
     color: "bg-[#FF2B4F] text-white",
     Icon: IconItchio,
   },
