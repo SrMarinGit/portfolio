@@ -20,16 +20,20 @@ const img = getImgFromAssets(String(proyecto?.data.img));
 ---
 
 <article class="text-neutral-100 flex flex-col md:flex-row gap-10 items-start">
-  <Image
-    src={img}
-    alt=""
-    class="rounded-lg w-[450px] hover:scale-105 transition"
-    width={600}
-  />
+  <a href={proyecto?.data.link}>
+    <Image
+      src={img}
+      alt=""
+      class="rounded-lg min-w-[450px] hover:scale-105 transition"
+      width={600}
+    />
+  </a>
   <div class="flex flex-col gap-3">
-    <h1 class="font-bold text-[30px] mb-0.5 leading-none">
-      {proyecto?.data.name}
-    </h1>
+    <a href={proyecto?.data.link}>
+      <h2 class="font-bold text-[30px] mb-0.5 leading-none">
+        {proyecto?.data.name}
+      </h2>
+    </a>
     <div class="flex gap-2">
       {proyecto?.data.tags.map((tag) => <Tag id={tag} />)}
     </div>
@@ -43,3 +47,9 @@ const img = getImgFromAssets(String(proyecto?.data.img));
     </div>
   </div>
 </article>
+
+<style>
+  a:hover {
+    text-shadow: #99f6e3f8 0px 0 4px;
+  }
+</style>

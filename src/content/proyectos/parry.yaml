@@ -1,12 +1,14 @@
 name: Pocket Parry
 description: Videojuego arcade gratuito. Entre su versión de PC y Android <strong>cuenta con miles de descargas.</strong>
 img: parry.jpg
+link: https://sites.google.com/view/megadrill/home
+
 tags:
   - UNITY
   - "C#"
 
 buttons:
-  - ENLACE https://www.google.com/
+  - ENLACE https://sites.google.com/view/megadrill/home
   - TRAILER https://www.youtube.com/watch?v=RSpy9A0pDoo
   - ANDROID https://play.google.com/store/apps/details?id=com.MegaDrill.PocketParrys&hl=es
   - ITCHIO https://srmarin.itch.io/pocket-parry
